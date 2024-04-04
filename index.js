@@ -20,8 +20,10 @@ form.addEventListener("submit", (e)=>{
     document.querySelector("#error p").innerHTML="";
     document.querySelector("#success p").innerHTML="Success : Employee Added!";
     form.reset();
+    document.querySelector("#success p").innerHTML="";
     }
     else{
+        id--;
         document.querySelector("#success p").innerHTML="";
         document.querySelector("#error p").innerHTML="Error : Please Make sure All the fields are filled before adding in an employee !"; 
     }
@@ -53,7 +55,6 @@ function addnewemployee(employee){
 }
 
 function deleterecord(e){
-    debugger;
     e.target.parentNode.parentNode.remove();
 }
 
