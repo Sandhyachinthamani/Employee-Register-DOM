@@ -25,9 +25,6 @@ form.addEventListener("submit", (e)=>{
     form.reset();
     }
     else{
-        if(employee.length()===0){
-            document.querySelector("#added p").innerHTML="You have 0 employees";
-        }
         document.querySelector("#success p").innerHTML="";
         document.querySelector("#error p").innerHTML="Error : Please Make sure All the fields are filled before adding in an employee !"; 
     }
