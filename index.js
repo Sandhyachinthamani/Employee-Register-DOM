@@ -13,12 +13,24 @@ form.addEventListener("submit", (e)=>{
         Name: form.name.value,
         Profession: form.profession.value,
         Age: form.age.value
-    };
-
+    };  
+    if(employee["Name"]&&employee["Profession"] && employee["Age"]){
     addnewemployee(employee);
     document.querySelector("#added p").innerHTML="";
+    document.querySelector("#error p").innerHTML="";
     document.querySelector("#success p").innerHTML="Success : Employee Added!";
+    if(employee.length===0){
+        document.querySelector("#added p").innerHTML="You have 0 employees";
+    }
     form.reset();
+    }
+    else{
+        if(employee.length()===0){
+            document.querySelector("#added p").innerHTML="You have 0 employees";
+        }
+        document.querySelector("#success p").innerHTML="";
+        document.querySelector("#error p").innerHTML="Error : Please Make sure All the fields are filled before adding in an employee !"; 
+    }
 })
 
 function addnewemployee(employee){

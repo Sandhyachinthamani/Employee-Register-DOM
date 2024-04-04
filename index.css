@@ -1,16 +1,17 @@
 *{
     background-color: black;
     font-family:Arial, Helvetica, sans-serif;
-    color: white;
     font-weight: 400;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 h3{
+    color: white;
     margin: 50px 0px 35px 40px;
 }
 form{
+    color: white;
     display: flex;
     flex-direction: column;
     font-size: smaller;
@@ -18,11 +19,13 @@ form{
     margin-right: 30%;
 }
 #takeinput{
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 input{
+    color: white;
     border: 1px solid white;
     padding: 8px;
     margin-top: 10px;
@@ -36,6 +39,7 @@ input{
     background-color: white;
 }
 #added{
+    color: white;
     margin-left:40px;
     margin-top:40px;
     display: flex;
@@ -51,7 +55,7 @@ input{
     color: green;
 }
 #error{
-    margin: 0px 80% 20px 40px;
+    margin: 20px 0% 20px 40px;
     color: red;
 }
 #employee-list{
@@ -94,6 +98,9 @@ input{
 }
 .employee-details{
     margin-right: 10%;
+}
+.Material-icons{
+    font-size:xx-small;
 }
 
 }
