@@ -23,7 +23,7 @@ form.addEventListener("submit", (e)=>{
     document.querySelector("#success p").innerHTML="";
     }
     else{
-        id--;
+        --id;
         document.querySelector("#success p").innerHTML="";
         document.querySelector("#error p").innerHTML="Error : Please Make sure All the fields are filled before adding in an employee !"; 
     }
