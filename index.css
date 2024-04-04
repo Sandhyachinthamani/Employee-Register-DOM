@@ -1,0 +1,99 @@
+*{
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    margin: 50px 0px 35px 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    margin-left:40px;
+    margin-right: 30%;
+}
+#takeinput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input{
+    border: 1px solid white;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+#submit{
+    margin-top:20px;
+    border:1px solid black;
+    padding: 10px 30px;
+    color: black;
+    background-color: white;
+}
+#added{
+    margin-left:40px;
+    margin-top:40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#added p{
+    color:grey;
+}
+#success p{
+    margin-left: 40px;
+    margin-top: 40px;
+    color: green;
+}
+#error{
+    margin: 0px 80% 20px 40px;
+    color: red;
+}
+#employee-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.employee-details{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.Material-icons{
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+.employee-details{
+    border: 1px solid white;
+    margin-right: 30%;
+    border-radius: 20px;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+#takeinput{
+    flex-direction: column;
+    gap:10px;
+}
+
+#employee-list{
+    font-size: x-small;
+}
+#added{
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+.employee-details{
+    margin-right: 10%;
+}
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM Elements contest</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="">
+</head>
+<body>
+    <h3>New Employees</h3>
+    <div>
+        <form id="form">
+            <div id="takeinput">
+                <div class="tab">
+                <label for="Name">Enter Name</label><br>
+                <input type="text" id="Name" name="name" size="40" required>
+                </div>
+                <div class="tab">
+                <label for="Profession">Enter Profession</label><br>
+                <input type="text" id="Profession" name="profession" size="40" required>
+                </div>
+                <div class="tab">
+                <label for="Age">Enter Age</label><br>
+                <input type="number" id="Age" name="age" required>
+                </div>
+            </div>
+            <div>
+                <button id="submit">Add User</button>
+            </div>
+        </form>
+        <div id="errorMessages"></div>
+    </div>
+    <div id="success">
+        <p></p>
+    </div>
+    <div id="added">
+        <h4>Added Employees</h4>
+        <p>You have 0 employees.</p>
+        <div id="employee-list"></div>
+    </div>
+
+    
+    
+    <script src="./index.js"></script>
+</body>
+</html>
