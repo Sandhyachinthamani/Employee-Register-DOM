@@ -19,9 +19,6 @@ form.addEventListener("submit", (e)=>{
     document.querySelector("#added p").innerHTML="";
     document.querySelector("#error p").innerHTML="";
     document.querySelector("#success p").innerHTML="Success : Employee Added!";
-    if(employee.length===0){
-        document.querySelector("#added p").innerHTML="You have 0 employees";
-    }
     form.reset();
     }
     else{
